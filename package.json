@@ -1,0 +1,32 @@
+{
+  "name": "nl.philips.hue",
+  "version": "1.0.0",
+  "description": "This app adds support for all Philips Hue lights & accessories that work with the Philips Hue Bridge. It is possible to use more than one bridge.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athombv/nl.philips.hue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/athombv/nl.philips.hue/issues"
+  },
+  "homepage": "https://github.com/athombv/nl.philips.hue#readme",
+  "dependencies": {
+    "@q42philips/hue-color-converter": "^1.0.0",
+    "homey-oauth2app": "^3.5.0",
+    "node-fetch": "^2.6.0",
+    "promise-queue": "^2.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-athom": "^2.1.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"pair": {
+		"select_bridge": {
+			"title": "Select your Philips Hue bridge",
+			"no_bridges": "No Philips Hue bridges have been found."
+		},
+		"press_button": {
+			"title": "Press the button",
+			"description": "Press the button on your Philips Hue bridge."
+		},
+		"press_syncbox_button": {
+			"title": "Press the button",
+			"description": "Press the button on your Hue Sync Box until the LED briefly blinks green."
+		}
+	},
+	"loading": "Searching for Hue Bridge...",
+	"loading_syncbox": "Searching for Hue Sync Box...",
+	"no_bridges": "No bridges connected",
+	"unreachable": "Unreachable",
+	"all_lights": "All lights",
+	"any_hdmi_input": "Any"
+}
