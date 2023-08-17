@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.philips.hue",
-  "version": "5.9.0",
+  "version": "5.9.3",
   "brandColor": "#F4AF2E",
   "compatibility": ">=5.0.0",
   "sdk": 3,
@@ -738,6 +738,16 @@
           "id": "authenticate"
         }
       ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
+        }
+      ],
       "name": {
         "en": "Light",
         "nl": "Lamp",
@@ -807,6 +817,16 @@
         {
           "id": "login_oauth2",
           "template": "login_oauth2"
+        }
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
         }
       ],
       "name": {
@@ -895,6 +915,16 @@
           "id": "authenticate"
         }
       ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
+        }
+      ],
       "name": {
         "en": "Smart button"
       },
@@ -949,6 +979,16 @@
       "repair": [
         {
           "id": "authenticate"
+        }
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
         }
       ],
       "name": {
@@ -1014,6 +1054,16 @@
           "id": "authenticate"
         }
       ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
+        }
+      ],
       "name": {
         "en": "Dimmer switch 2"
       },
@@ -1077,6 +1127,16 @@
           "id": "authenticate"
         }
       ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
+        }
+      ],
       "name": {
         "en": "Module"
       },
@@ -1138,6 +1198,16 @@
       "repair": [
         {
           "id": "authenticate"
+        }
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
         }
       ],
       "name": {
@@ -1209,6 +1279,16 @@
           "id": "authenticate"
         }
       ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
+        }
+      ],
       "name": {
         "en": "Plug"
       },
@@ -1250,6 +1330,16 @@
         {
           "id": "login_oauth2",
           "template": "login_oauth2"
+        }
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
         }
       ],
       "name": {
@@ -1300,6 +1390,16 @@
       ],
       "platforms": [
         "local"
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": "HSB1"
+        }
       ]
     },
     {
@@ -1346,6 +1446,16 @@
       "repair": [
         {
           "id": "authenticate"
+        }
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
         }
       ],
       "name": {
@@ -1402,6 +1512,16 @@
       "repair": [
         {
           "id": "authenticate"
+        }
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model"
+          },
+          "value": ""
         }
       ],
       "name": {

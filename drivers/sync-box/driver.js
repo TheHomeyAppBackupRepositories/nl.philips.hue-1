@@ -25,7 +25,7 @@ module.exports = class SyncBoxDriver extends Homey.Driver {
           res.unshift(
             {
               id: 'any',
-              title: this.homey.__('any_hdmi_input'),
+              name: this.homey.__('any_hdmi_input'),
             },
           );
           return res;

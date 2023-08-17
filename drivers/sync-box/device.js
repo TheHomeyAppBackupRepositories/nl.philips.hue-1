@@ -88,7 +88,7 @@ module.exports = class SyncBoxDevice extends Homey.Device {
         const { name } = inputs[key];
         return {
           id: key,
-          title: name,
+          name,
         };
       });
   }
