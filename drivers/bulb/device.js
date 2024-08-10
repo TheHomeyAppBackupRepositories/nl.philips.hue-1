@@ -10,10 +10,14 @@ class HueDeviceLocalBulb extends HueDeviceLocal {
 }
 
 HueDeviceLocalBulb.prototype.onHueInit = HueDeviceBulb.prototype.onHueInit;
-HueDeviceLocalBulb.prototype.onHuePoll = HueDeviceBulb.prototype.onHuePoll;
+HueDeviceLocalBulb.prototype.onHueEventUpdate = HueDeviceBulb.prototype.onHueEventUpdate;
 
 HueDeviceLocalBulb.prototype.onRenamed = HueDeviceBulb.prototype.onRenamed;
 HueDeviceLocalBulb.prototype.onCapabilityAll = HueDeviceBulb.prototype.onCapabilityAll;
+
+HueDeviceLocalBulb.prototype.setLightStateV2 = HueDeviceBulb.prototype.setLightStateV2;
+HueDeviceLocalBulb.prototype.setEffect = HueDeviceBulb.prototype.setEffect;
+HueDeviceLocalBulb.prototype.alertV2 = HueDeviceBulb.prototype.alertV2;
 
 HueDeviceLocalBulb.prototype.setLightState = HueDeviceBulb.prototype.setLightState;
 HueDeviceLocalBulb.prototype.shortAlert = HueDeviceBulb.prototype.shortAlert;

@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/athombv/nl.philips.hue#readme",
   "dependencies": {
-    "@q42philips/hue-color-converter": "^1.0.0",
+    "eventsource": "^2.0.2",
     "homey-oauth2app": "^3.5.0",
     "node-fetch": "^2.6.0",
     "promise-queue": "^2.2.5"

@@ -15,6 +15,22 @@ module.exports = class SyncBoxDriver extends Homey.Driver {
         return device.getInputs();
       });
 
+    this.homey.flow.getActionCard('enable_sync')
+      .registerRunListener(async({ device }) => {
+        return device.triggerCapabilityListener('sync', true);
+      });
+
+    this.homey.flow.getActionCard('disable_sync')
+      .registerRunListener(async({ device }) => {
+        return device.triggerCapabilityListener('sync', false);
+      });
+
+    this.homey.flow.getActionCard('toggle_sync')
+      .registerRunListener(async({ device }) => {
+        const sync = device.getCapabilityValue('sync');
+        return device.triggerCapabilityListener('sync', !sync);
+      });
+
     this.homey.flow.getDeviceTriggerCard('hdmi-input_switched')
       .registerRunListener((args, state) => {
         return args.input.id === 'any' || state.hdmiSource === args.input.id;

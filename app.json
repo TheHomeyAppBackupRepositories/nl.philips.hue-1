@@ -1,16 +1,36 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.philips.hue",
-  "version": "5.9.3",
+  "version": "6.2.1",
   "brandColor": "#F4AF2E",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
-    "en": "Philips Hue"
+    "en": "Philips Hue",
+    "da": "Philips Hue",
+    "de": "Philips Hue",
+    "es": "Philips Hue",
+    "fr": "Philips Hue",
+    "it": "Philips Hue",
+    "no": "Philips Hue",
+    "sv": "Philips Hue",
+    "pl": "Philips Hue",
+    "ru": "Philips Hue",
+    "ko": "필립스 휴"
   },
   "description": {
     "en": "Transform the way you experience light",
-    "nl": "Transformeer hoe je licht ervaart"
+    "nl": "Transformeer hoe je licht ervaart",
+    "da": "Transformer måden du oplever lys på",
+    "de": "Verändere die Art, wie du Licht erlebst",
+    "es": "Transforma la forma en que experimentas la luz",
+    "fr": "Transformez votre expérience de la lumière",
+    "it": "Trasforma il modo in cui vivi la luce",
+    "no": "Forvandle måten du opplever lys på",
+    "sv": "Förvandla sättet du upplever ljus på",
+    "pl": "Zmień sposób, w jaki doświadczasz światła",
+    "ru": "Измени то, как ты воспринимаешь свет",
+    "ko": "빛을 경험하는 방식을 변화시키다"
   },
   "author": {
     "name": "Athom B.V."
@@ -37,13 +57,56 @@
     "actions": [
       {
         "title": {
+          "en": "Blink the light",
+          "nl": "Knipper de lamp",
+          "de": "Das Licht blinken lassen",
+          "da": "Blink lyset",
+          "es": "Parpadea la luz",
+          "fr": "Fais clignoter la lumière",
+          "it": "Fai lampeggiare la luce",
+          "no": "Blink lyset",
+          "sv": "Blinka ljuset",
+          "pl": "Mrugnij światłem",
+          "ru": "Мигнуть светом",
+          "ko": "빛을 깜빡입니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bulb|bulb_cloud"
+          }
+        ],
+        "id": "alert"
+      },
+      {
+        "title": {
           "en": "Turn all lights off in a room",
           "nl": "Zet alle lampen uit in een ruimte",
-          "de": "Alle Lichter in einem Raum ausschalten"
+          "de": "Alle Lichter in einem Raum ausschalten",
+          "da": "Sluk alle lys i et rum",
+          "es": "Apaga todas las luces en una habitación",
+          "fr": "Éteindre toutes les lumières dans une pièce",
+          "it": "Spegni tutte le luci in una stanza",
+          "no": "Slå av alle lys i et rom",
+          "sv": "Stäng av alla lampor i ett rum",
+          "pl": "Wyłącz wszystkie światła w pokoju",
+          "ru": "Выключить все светильники в комнате",
+          "ko": "방안의 모든 전등을 끄세요"
         },
         "titleFormatted": {
           "en": "Turn all lights off in [[group]]",
-          "nl": "Zet alle lampen uit in [[group]]"
+          "nl": "Zet alle lampen uit in [[group]]",
+          "da": "Sluk alle lys i [[group]]",
+          "de": "Alle Lichter in [[group]] ausschalten",
+          "es": "Apaga todas las luces en [[group]]",
+          "fr": "Éteindre toutes les lumières dans [[group]]",
+          "it": "Spegni tutte le luci in [[group]]",
+          "no": "Slå av alle lys i [[group]]",
+          "sv": "Stäng av alla lampor i [[group]]",
+          "pl": "Wyłącz wszystkie światła w [[group]]",
+          "ru": "Выключить все светильники в [[group]]",
+          "ko": "[[group]]의 모든 전등을 끄세요"
         },
         "args": [
           {
@@ -51,7 +114,17 @@
             "type": "autocomplete",
             "title": {
               "en": "Group",
-              "nl": "Groep"
+              "nl": "Groep",
+              "da": "Gruppe",
+              "de": "Gruppe",
+              "es": "Grupo",
+              "fr": "Groupe",
+              "it": "Gruppo",
+              "no": "Gruppe",
+              "sv": "Grupp",
+              "pl": "Grupa",
+              "ru": "Группа",
+              "ko": "그룹"
             }
           }
         ],
@@ -61,11 +134,30 @@
         "title": {
           "en": "Turn all lights on in a room",
           "nl": "Zet alle lampen aan in een ruimte",
-          "de": "Alle Lichter in einem Raum einschalten"
+          "de": "Alle Lichter in einem Raum einschalten",
+          "da": "Tænd alle lys i et rum",
+          "es": "Enciende todas las luces en una habitación",
+          "fr": "Allumez toutes les lumières dans une pièce",
+          "it": "Accendi tutte le luci in una stanza",
+          "no": "Slå på alle lysene i et rom",
+          "sv": "Tänd alla lampor i ett rum",
+          "pl": "Włącz wszystkie światła w pokoju",
+          "ru": "Включите все огни в комнате",
+          "ko": "방 안의 모든 불을 켜다"
         },
         "titleFormatted": {
           "en": "Turn all lights on in [[group]]",
-          "nl": "Zet alle lampen aan in [[group]]"
+          "nl": "Zet alle lampen aan in [[group]]",
+          "da": "Tænd alle lys i [[group]]",
+          "de": "Alle Lichter in [[group]] einschalten",
+          "es": "Enciende todas las luces en [[group]]",
+          "fr": "Allumez toutes les lumières dans [[group]]",
+          "it": "Accendi tutte le luci in [[group]]",
+          "no": "Slå på alle lysene i [[group]]",
+          "sv": "Tänd alla lampor i [[group]]",
+          "pl": "Włącz wszystkie światła w [[group]]",
+          "ru": "Включите все огни в [[group]]",
+          "ko": "방 안의 [[group]]의 모든 불을 켜다"
         },
         "args": [
           {
@@ -73,7 +165,17 @@
             "type": "autocomplete",
             "title": {
               "en": "Group",
-              "nl": "Groep"
+              "nl": "Groep",
+              "da": "Gruppe",
+              "de": "Gruppe",
+              "es": "Grupo",
+              "fr": "Groupe",
+              "it": "Gruppo",
+              "no": "Gruppe",
+              "sv": "Grupp",
+              "pl": "Grupa",
+              "ru": "Группа",
+              "ko": "그룹"
             }
           }
         ],
@@ -82,11 +184,31 @@
       {
         "title": {
           "en": "Set brightness of all lights in a room",
-          "nl": "Zet de helderheid van alle lampen in een ruimte"
+          "nl": "Zet de helderheid van alle lampen in een ruimte",
+          "da": "Indstil lysstyrken af alle lys i et rum",
+          "de": "Helligkeit aller Lichter in einem Raum einstellen",
+          "es": "Establecer el brillo de todas las luces en una habitación",
+          "fr": "Régler la luminosité de toutes les lumières dans une pièce",
+          "it": "Impostare la luminosità di tutte le luci in una stanza",
+          "no": "Juster lysstyrken på alle lys i et rom",
+          "sv": "Ställ in ljusstyrkan på alla lampor i ett rum",
+          "pl": "Ustaw jasność wszystkich świateł w pomieszczeniu",
+          "ru": "Установить яркость всех светильников в комнате",
+          "ko": "방의 모든 조명의 밝기를 설정"
         },
         "titleFormatted": {
           "en": "Set the brightness of all lights in [[group]] to [[brightness]]",
-          "nl": "Zet de helderheid van alle lampen in [[group]] naar [[brightness]]"
+          "nl": "Zet de helderheid van alle lampen in [[group]] naar [[brightness]]",
+          "da": "Indstil lysstyrken af alle lys i [[group]] til [[brightness]]",
+          "de": "Helligkeit aller Lichter in [[group]] auf [[brightness]] einstellen",
+          "es": "Establecer el brillo de todas las luces en [[group]] a [[brightness]]",
+          "fr": "Régler la luminosité de toutes les lumières dans [[group]] à [[brightness]]",
+          "it": "Impostare la luminosità di tutte le luci in [[group]] a [[brightness]]",
+          "no": "Juster lysstyrken på alle lys i [[group]] til [[brightness]]",
+          "sv": "Ställ in ljusstyrkan på alla lampor i [[group]] till [[brightness]]",
+          "pl": "Ustaw jasność wszystkich świateł w [[group]] na [[brightness]]",
+          "ru": "Установить яркость всех светильников в [[group]] на [[brightness]]",
+          "ko": "[[group]]의 모든 조명의 밝기를 [[brightness]]로 설정"
         },
         "duration": true,
         "args": [
@@ -95,7 +217,17 @@
             "type": "autocomplete",
             "title": {
               "en": "Group",
-              "nl": "Groep"
+              "nl": "Groep",
+              "da": "Gruppe",
+              "de": "Gruppe",
+              "es": "Grupo",
+              "fr": "Groupe",
+              "it": "Gruppo",
+              "no": "Gruppe",
+              "sv": "Grupp",
+              "pl": "Grupa",
+              "ru": "Группа",
+              "ko": "그룹"
             }
           },
           {
@@ -108,17 +240,37 @@
             "label": "%",
             "title": {
               "en": "Brightness",
-              "nl": "Helderheid"
+              "nl": "Helderheid",
+              "da": "Lysstyrke",
+              "de": "Helligkeit",
+              "es": "Brillo",
+              "fr": "Luminosité",
+              "it": "Luminosità",
+              "no": "Lysstyrke",
+              "sv": "Ljusstyrka",
+              "pl": "Jasność",
+              "ru": "Яркость",
+              "ko": "밝기"
             }
           }
         ],
         "id": "groupSetBrightness"
       },
       {
+        "deprecated": true,
         "title": {
           "en": "Blink the light (long)",
           "nl": "Knipper de lamp (lang)",
-          "de": "Das Licht blinken lassen (lang)"
+          "de": "Das Licht blinken lassen (lang)",
+          "da": "Blink lyset (lang)",
+          "es": "Parpadea la luz (larga)",
+          "fr": "Fais clignoter la lumière (long)",
+          "it": "Lampeggia la luce (lungo)",
+          "no": "Blink lys (lang)",
+          "sv": "Blinka lampan (lång)",
+          "pl": "Mrugaj światłem (długie)",
+          "ru": "Моргни светом (долго)",
+          "ko": "빛을 깜박입니다 (길게)"
         },
         "args": [
           {
@@ -132,11 +284,31 @@
       {
         "title": {
           "en": "Set gradient",
-          "nl": "Zet gradient"
+          "nl": "Zet gradient",
+          "da": "Indstil gradient",
+          "de": "Farbverlauf festlegen",
+          "es": "Establecer degradado",
+          "fr": "Définir le dégradé",
+          "it": "Imposta sfumatura",
+          "no": "Sett gradient",
+          "sv": "Ställ in gradient",
+          "pl": "Ustaw gradient",
+          "ru": "Установить градиент",
+          "ko": "그라데이션 설정"
         },
         "titleFormatted": {
           "en": "Set gradient to [[color1]] [[color2]] [[color3]]",
-          "nl": "Zet gradient naar [[color1]] [[color2]] [[color3]]"
+          "nl": "Zet gradient naar [[color1]] [[color2]] [[color3]]",
+          "da": "Indstil gradient til [[color1]] [[color2]] [[color3]]",
+          "de": "Farbverlauf festlegen auf [[color1]] [[color2]] [[color3]]",
+          "es": "Establecer degradado a [[color1]] [[color2]] [[color3]]",
+          "fr": "Définir le dégradé sur [[color1]] [[color2]] [[color3]]",
+          "it": "Imposta sfumatura su [[color1]] [[color2]] [[color3]]",
+          "no": "Sett gradient til [[color1]] [[color2]] [[color3]]",
+          "sv": "Ställ in gradient till [[color1]] [[color2]] [[color3]]",
+          "pl": "Ustaw gradient na [[color1]] [[color2]] [[color3]]",
+          "ru": "Установить градиент на [[color1]] [[color2]] [[color3]]",
+          "ko": "[[color1]] [[color2]] [[color3]]로 그라데이션 설정"
         },
         "args": [
           {
@@ -149,7 +321,17 @@
             "name": "color1",
             "title": {
               "en": "Color 1",
-              "nl": "Kleur 1"
+              "nl": "Kleur 1",
+              "da": "Farve 1",
+              "de": "Farbe 1",
+              "es": "Color 1",
+              "fr": "Couleur 1",
+              "it": "Colore 1",
+              "no": "Farge 1",
+              "sv": "Färg 1",
+              "pl": "Kolor 1",
+              "ru": "Цвет 1",
+              "ko": "색상 1"
             },
             "value": "#FF0000"
           },
@@ -158,7 +340,17 @@
             "name": "color2",
             "title": {
               "en": "Color 2",
-              "nl": "Kleur 2"
+              "nl": "Kleur 2",
+              "da": "Farve 2",
+              "de": "Farbe 2",
+              "es": "Color 2",
+              "fr": "Couleur 2",
+              "it": "Colore 2",
+              "no": "Farge 2",
+              "sv": "Färg 2",
+              "pl": "Kolor 2",
+              "ru": "Цвет 2",
+              "ko": "색상 2"
             },
             "value": "#00FF00"
           },
@@ -167,7 +359,17 @@
             "name": "color3",
             "title": {
               "en": "Color 3",
-              "nl": "Kleur 3"
+              "nl": "Kleur 3",
+              "da": "Farve 3",
+              "de": "Farbe 3",
+              "es": "Color 3",
+              "fr": "Couleur 3",
+              "it": "Colore 3",
+              "no": "Farge 3",
+              "sv": "Färg 3",
+              "pl": "Kolor 3",
+              "ru": "Цвет 3",
+              "ko": "색상 3"
             },
             "value": "#0000FF"
           }
@@ -178,11 +380,30 @@
         "title": {
           "en": "Set a scene",
           "nl": "Activeer een scene",
-          "de": "Eine Szene setzen"
+          "de": "Eine Szene setzen",
+          "da": "Indstil en scene",
+          "es": "Configurar una escena",
+          "fr": "Définir une scène",
+          "it": "Imposta una scena",
+          "no": "Sett en scene",
+          "sv": "Ställ in en scen",
+          "pl": "Ustaw scenę",
+          "ru": "Установить сцену",
+          "ko": "장면 설정"
         },
         "titleFormatted": {
           "en": "Activate the [[scene]] scene",
-          "nl": "Activeer de [[scene]] scene"
+          "nl": "Activeer de [[scene]] scene",
+          "da": "Aktiver [[scene]] scenen",
+          "de": "Aktiviere die [[scene]] Szene",
+          "es": "Activa la escena [[scene]]",
+          "fr": "Activez la scène [[scene]]",
+          "it": "Attiva la scena [[scene]]",
+          "no": "Aktivere [[scene]] scenen",
+          "sv": "Aktivera [[scene]] scenen",
+          "pl": "Aktywuj scenę [[scene]]",
+          "ru": "Активировать сцену [[scene]]",
+          "ko": "[[scene]] 장면 활성화"
         },
         "args": [
           {
@@ -190,17 +411,37 @@
             "type": "autocomplete",
             "title": {
               "en": "Scene",
-              "nl": "Scene"
+              "nl": "Scene",
+              "da": "Scene",
+              "de": "Szene",
+              "es": "Escena",
+              "fr": "Scène",
+              "it": "Scena",
+              "no": "Scene",
+              "sv": "Scen",
+              "pl": "Scena",
+              "ru": "Сцена",
+              "ko": "장면"
             }
           }
         ],
         "id": "setScene"
       },
       {
+        "deprecated": true,
         "title": {
           "en": "Blink the light (short)",
           "nl": "Knipper de lamp (kort)",
-          "de": "Das Licht blinken lassen (kurz)"
+          "de": "Das Licht blinken lassen (kurz)",
+          "da": "Blink lyset (kort)",
+          "es": "Parpadea la luz (corto)",
+          "fr": "Faire clignoter la lumière (court)",
+          "it": "Lampeggia la luce (breve)",
+          "no": "Blink lysen (kort)",
+          "sv": "Blinka lampan (kort)",
+          "pl": "Mrugnij światłem (krótko)",
+          "ru": "Моргнуть светом (коротко)",
+          "ko": "빛을 깜빡입니다 (짧게)"
         },
         "args": [
           {
@@ -212,10 +453,20 @@
         "id": "shortAlert"
       },
       {
+        "deprecated": true,
         "title": {
           "en": "Start colorloop effect",
           "nl": "Begin kleur effect",
-          "de": "Farbschleifen-Effekt starten"
+          "de": "Farbschleifen-Effekt starten",
+          "da": "Start farvesløjfe-effekt",
+          "es": "Iniciar efecto de ciclo de colores",
+          "fr": "Démarrer l'effet boucle de couleur",
+          "it": "Avvia effetto ciclo di colori",
+          "no": "Start farge-sløyfe effekt",
+          "sv": "Starta färgloop-effekt",
+          "pl": "Rozpocznij efekt pętli kolorów",
+          "ru": "Запустить эффект цветового цикла",
+          "ko": "컬러 루프 효과 시작"
         },
         "args": [
           {
@@ -228,9 +479,89 @@
       },
       {
         "title": {
+          "en": "Start effect",
+          "nl": "Begin effect",
+          "de": "Effekt starten",
+          "da": "Start effekt",
+          "es": "Comenzar efecto",
+          "fr": "Démarrer l'effet",
+          "it": "Inizia effetto",
+          "no": "Start effekt",
+          "sv": "Starta effekt",
+          "pl": "Rozpocznij efekt",
+          "ru": "Запустить эффект",
+          "ko": "효과 시작"
+        },
+        "hint": {
+          "en": "The available effects depend on the bulb type. If the dropdown is empty the device does not support effects.",
+          "nl": "De ondersteunde effecten zijn afhankelijk van het lamptype. Als de keuzelijst leeg is, ondersteunt het apparaat geen effecten.",
+          "de": "Die unterstützten Effekte hängen vom Lampentyp ab. Wenn das Dropdown-Menü leer ist, unterstützt das Gerät keine Effekte.",
+          "da": "De tilgængelige effekter afhænger af pæretypen. Hvis rullemenuen er tom, understøtter enheden ikke effekter.",
+          "es": "Los efectos disponibles dependen del tipo de bombilla. Si la lista desplegable está vacía, el dispositivo no soporta efectos.",
+          "fr": "Les effets disponibles dépendent du type d'ampoule. Si la liste déroulante est vide, l'appareil ne prend pas en charge les effets.",
+          "it": "Gli effetti disponibili dipendono dal tipo di lampadina. Se il menu a discesa è vuoto, il dispositivo non supporta gli effetti.",
+          "no": "De tilgjengelige effektene avhenger av type pære. Hvis rullegardinmenyen er tom, støtter ikke enheten effekter.",
+          "sv": "De tillgängliga effekterna beror på lampans typ. Om rullgardinsmenyn är tom stöder enheten inte effekter.",
+          "pl": "Dostępne efekty zależą od typu żarówki. Jeśli lista rozwijana jest pusta, urządzenie nie obsługuje efektów.",
+          "ru": "Доступные эффекты зависят от типа лампочки. Если меню пустое, устройство не поддерживает эффекты.",
+          "ko": "사용 가능한 효과는 전구 유형에 따라 다릅니다. 드롭다운이 비어 있으면 장치에서 효과를 지원하지 않습니다."
+        },
+        "titleFormatted": {
+          "en": "Start [[effect]] effect",
+          "nl": "Begin [[effect]] effect",
+          "de": "[[effect]] Effekt starten",
+          "da": "Start [[effect]] effekt",
+          "es": "Comenzar efecto [[effect]]",
+          "fr": "Démarrer l'effet [[effect]]",
+          "it": "Inizia effetto [[effect]]",
+          "no": "Start [[effect]] effekt",
+          "sv": "Starta [[effect]] effekt",
+          "pl": "Rozpocznij efekt [[effect]]",
+          "ru": "Запустить эффект [[effect]]",
+          "ko": "[[effect]] 효과 시작"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bulb|bulb_cloud"
+          },
+          {
+            "type": "autocomplete",
+            "name": "effect",
+            "title": {
+              "en": "Effect",
+              "nl": "Effect",
+              "de": "Effekt",
+              "da": "Effekt",
+              "es": "Efecto",
+              "fr": "Effet",
+              "it": "Effetto",
+              "no": "Effekt",
+              "sv": "Effekt",
+              "pl": "Efekt",
+              "ru": "Эффект",
+              "ko": "효과"
+            }
+          }
+        ],
+        "id": "startEffect"
+      },
+      {
+        "deprecated": true,
+        "title": {
           "en": "Stop colorloop effect",
           "nl": "Stop kleur effect",
-          "de": "Farbschleifen-Effekt anhalten"
+          "de": "Farbschleifen-Effekt anhalten",
+          "da": "Stop farveloop-effekt",
+          "es": "Detener efecto de bucle de color",
+          "fr": "Arrêter l'effet boucle de couleur",
+          "it": "Interrompi l'effetto loop colori",
+          "no": "Stopp fargeloop-effekt",
+          "sv": "Stoppa färgloop-effekt",
+          "pl": "Zatrzymaj efekt pętli kolorów",
+          "ru": "Остановить цветовой эффект",
+          "ko": "색상 루프 효과 중지"
         },
         "args": [
           {
@@ -242,11 +573,92 @@
         "id": "stopColorLoop"
       },
       {
+        "title": {
+          "en": "Stop effect",
+          "nl": "Stop effect",
+          "de": "Effekt anhalten",
+          "da": "Stop effekt",
+          "es": "Detener efecto",
+          "fr": "Arrêter l'effet",
+          "it": "Interrompi effetto",
+          "no": "Stopp effekt",
+          "sv": "Stoppa effekt",
+          "pl": "Zatrzymaj efekt",
+          "ru": "Остановить эффект",
+          "ko": "효과 중지"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bulb|bulb_cloud"
+          }
+        ],
+        "id": "stopEffect"
+      },
+      {
+        "id": "enableContactSensor",
+        "title": {
+          "en": "Enable sensor",
+          "nl": "Schakel sensor in",
+          "de": "Sensor aktivieren",
+          "da": "Aktivér sensor",
+          "es": "Activar sensor",
+          "fr": "Activer le capteur",
+          "it": "Abilita sensore",
+          "no": "Aktiver sensor",
+          "sv": "Aktivera sensor",
+          "pl": "Włącz czujnik",
+          "ru": "Включить датчик",
+          "ko": "센서 활성화"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=contactsensor"
+          }
+        ]
+      },
+      {
+        "id": "disableContactSensor",
+        "title": {
+          "en": "Disable sensor",
+          "nl": "Schakel sensor uit",
+          "de": "Sensor deaktivieren",
+          "da": "Deaktiver sensor",
+          "es": "Desactivar sensor",
+          "fr": "Désactiver le capteur",
+          "it": "Disabilita sensore",
+          "no": "Deaktiver sensor",
+          "sv": "Inaktivera sensor",
+          "pl": "Wyłącz czujnik",
+          "ru": "Выключить датчик",
+          "ko": "센서 비활성화"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=contactsensor"
+          }
+        ]
+      },
+      {
         "id": "enableMotionSensor",
         "title": {
           "en": "Enable sensor",
           "nl": "Schakel sensor in",
-          "de": "Sensor aktivieren"
+          "de": "Sensor aktivieren",
+          "da": "Aktiver sensor",
+          "es": "Activar sensor",
+          "fr": "Activer le capteur",
+          "it": "Abilita sensore",
+          "no": "Aktiver sensor",
+          "sv": "Aktivera sensor",
+          "pl": "Włącz czujnik",
+          "ru": "Включить датчик",
+          "ko": "센서 활성화"
         },
         "args": [
           {
@@ -261,7 +673,16 @@
         "title": {
           "en": "Disable sensor",
           "nl": "Schakel sensor uit",
-          "de": "Sensor deaktivieren"
+          "de": "Sensor deaktivieren",
+          "da": "Deaktiver sensor",
+          "es": "Desactivar sensor",
+          "fr": "Désactiver le capteur",
+          "it": "Disabilita sensore",
+          "no": "Deaktiver sensor",
+          "sv": "Inaktivera sensor",
+          "pl": "Wyłącz czujnik",
+          "ru": "Выключить датчик",
+          "ko": "센서 비활성화"
         },
         "args": [
           {
@@ -275,11 +696,31 @@
         "id": "set_input",
         "title": {
           "en": "Set Input",
-          "nl": "Zet Input"
+          "nl": "Zet Input",
+          "da": "Sæt Input",
+          "de": "Eingang Einstellen",
+          "es": "Establecer Entrada",
+          "fr": "Définir Entrée",
+          "it": "Imposta Ingresso",
+          "no": "Sett Inngang",
+          "sv": "Ställ in Ingång",
+          "pl": "Ustaw Wejście",
+          "ru": "Установить Вход",
+          "ko": "입력 설정"
         },
         "titleFormatted": {
           "en": "Set input to [[input]]",
-          "nl": "Zet input naar [[input]]"
+          "nl": "Zet input naar [[input]]",
+          "da": "Sæt input til [[input]]",
+          "de": "Eingang einstellen auf [[input]]",
+          "es": "Establecer entrada a [[input]]",
+          "fr": "Définir l'entrée sur [[input]]",
+          "it": "Imposta ingresso su [[input]]",
+          "no": "Sett inngang til [[input]]",
+          "sv": "Ställ in ingång till [[input]]",
+          "pl": "Ustaw wejście na [[input]]",
+          "ru": "Установить вход на [[input]]",
+          "ko": "[[input]](으)로 입력 설정"
         },
         "args": [
           {
@@ -291,8 +732,90 @@
             "name": "input",
             "type": "autocomplete",
             "title": {
-              "en": "Input"
+              "en": "Input",
+              "da": "Input",
+              "de": "Eingabe",
+              "es": "Entrada",
+              "fr": "Entrée",
+              "it": "Ingresso",
+              "no": "Inngang",
+              "sv": "Ingång",
+              "pl": "Wejście",
+              "ru": "Вход",
+              "ko": "입력"
             }
+          }
+        ]
+      },
+      {
+        "id": "enable_sync",
+        "title": {
+          "en": "Turn on sync",
+          "nl": "Zet sync aan",
+          "da": "Tænd synkronisering",
+          "de": "Synchronisierung einschalten",
+          "es": "Activar sincronización",
+          "fr": "Activer la synchronisation",
+          "it": "Attiva sincro",
+          "no": "Aktiver synkronisering",
+          "sv": "Slå på synkronisering",
+          "pl": "Włącz synchronizację",
+          "ru": "Включить синхронизацию",
+          "ko": "동기화 켜기"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sync-box"
+          }
+        ]
+      },
+      {
+        "id": "disable_sync",
+        "title": {
+          "en": "Turn off sync",
+          "nl": "Zet sync uit",
+          "da": "Sluk synkronisering",
+          "de": "Synchronisierung ausschalten",
+          "es": "Desactivar sincronización",
+          "fr": "Désactiver la synchronisation",
+          "it": "Disattiva sincro",
+          "no": "Deaktiver synkronisering",
+          "sv": "Stäng av synkronisering",
+          "pl": "Wyłącz synchronizację",
+          "ru": "Отключить синхронизацию",
+          "ko": "동기화 끄기"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sync-box"
+          }
+        ]
+      },
+      {
+        "id": "toggle_sync",
+        "title": {
+          "en": "Toggle sync on or off",
+          "nl": "Schakel sync aan of uit",
+          "da": "Skift synkronisering til eller fra",
+          "de": "Synchronisierung umschalten",
+          "es": "Alternar sincronización",
+          "fr": "Activer ou désactiver la synchronisation",
+          "it": "Attiva o disattiva sicnro",
+          "no": "Veksle synkronisering av og på",
+          "sv": "Växla synkronisering av eller på",
+          "pl": "Przełącz synchronizację",
+          "ru": "Переключить синхронизацию",
+          "ko": "동기화 켜기/끄기"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sync-box"
           }
         ]
       }
@@ -302,7 +825,17 @@
         "id": "button_button_pressed",
         "title": {
           "en": "The button has been pressed",
-          "nl": "De knop is ingedrukt"
+          "nl": "De knop is ingedrukt",
+          "da": "Knappen er blevet trykket på",
+          "de": "Der Knopf wurde gedrückt",
+          "es": "El botón ha sido presionado",
+          "fr": "Le bouton a été pressé",
+          "it": "Il pulsante è stato premuto",
+          "no": "Knappen har blitt trykket på",
+          "sv": "Knappen har tryckts in",
+          "pl": "Przycisk został naciśnięty",
+          "ru": "Кнопка была нажата",
+          "ko": "버튼이 눌렸습니다"
         },
         "args": [
           {
@@ -316,7 +849,17 @@
         "id": "button_button_held",
         "title": {
           "en": "The button is being held",
-          "nl": "De knop werd ingehouden"
+          "nl": "De knop werd ingehouden",
+          "da": "Knappen holdes nede",
+          "de": "Der Knopf wird gehalten",
+          "es": "El botón está siendo mantenido",
+          "fr": "Le bouton est maintenu",
+          "it": "Il pulsante viene tenuto premuto",
+          "no": "Knappen holdes inne",
+          "sv": "Knappen hålls inne",
+          "pl": "Przycisk jest trzymany",
+          "ru": "Кнопка удерживается",
+          "ko": "버튼이 눌린 상태입니다"
         },
         "args": [
           {
@@ -330,7 +873,17 @@
         "id": "button_button_released",
         "title": {
           "en": "The button has been released",
-          "nl": "De knop werd losgelaten"
+          "nl": "De knop werd losgelaten",
+          "da": "Knappen er blevet frigivet",
+          "de": "Der Knopf wurde losgelassen",
+          "es": "El botón ha sido liberado",
+          "fr": "Le bouton a été relâché",
+          "it": "Il pulsante è stato rilasciato",
+          "no": "Knappen har blitt sluppet",
+          "sv": "Knappen har släppts",
+          "pl": "Przycisk został zwolniony",
+          "ru": "Кнопка была отпущена",
+          "ko": "버튼이 놓였습니다"
         },
         "args": [
           {
@@ -345,11 +898,29 @@
         "title": {
           "en": "A button is pressed",
           "nl": "Een knop is ingedrukt",
-          "de": "Eine Taste wird gedrückt"
+          "de": "Eine Taste wird gedrückt",
+          "da": "En knap er trykket",
+          "es": "Se presiona un botón",
+          "fr": "Un bouton est pressé",
+          "it": "Un pulsante è premuto",
+          "no": "En knapp er trykket",
+          "sv": "En knapp är nedtryckt",
+          "pl": "Przycisk został naciśnięty",
+          "ru": "Кнопка нажата",
+          "ko": "버튼이 눌렸습니다"
         },
         "titleFormatted": {
           "en": "The [[button]] button is pressed",
-          "nl": "De [[button]] knop is ingedrukt"
+          "nl": "De [[button]] knop is ingedrukt",
+          "da": "[[button]] knappen er trykket",
+          "es": "El botón [[button]] está presionado",
+          "fr": "Le bouton [[button]] est pressé",
+          "it": "Il pulsante [[button]] è premuto",
+          "no": "[[button]] knappen er trykket",
+          "sv": "[[button]] knappen är nedtryckt",
+          "pl": "Przycisk [[button]] został naciśnięty",
+          "ru": "Кнопка [[button]] нажата",
+          "ko": "[[button]] 버튼이 눌렸습니다"
         },
         "args": [
           {
@@ -362,14 +933,32 @@
             "type": "dropdown",
             "title": {
               "en": "Button",
-              "nl": "Knop"
+              "nl": "Knop",
+              "da": "Knap",
+              "es": "Botón",
+              "fr": "Bouton",
+              "it": "Pulsante",
+              "no": "Knappe",
+              "sv": "Knapp",
+              "pl": "Przycisk",
+              "ru": "Кнопка",
+              "ko": "버튼"
             },
             "values": [
               {
                 "id": "on",
                 "label": {
                   "en": "On",
-                  "nl": "Aan"
+                  "nl": "Aan",
+                  "da": "Tændt",
+                  "es": "Encendido",
+                  "fr": "Allumé",
+                  "it": "Acceso",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Włączony",
+                  "ru": "Вкл",
+                  "ko": "켜기"
                 }
               },
               {
@@ -377,7 +966,16 @@
                 "label": {
                   "en": "Increase brightness",
                   "nl": "Verhoog helderheid",
-                  "de": "Helligkeit erhöhen"
+                  "de": "Helligkeit erhöhen",
+                  "da": "Øg lysstyrken",
+                  "es": "Aumentar brillo",
+                  "fr": "Augmenter la luminosité",
+                  "it": "Aumenta la luminosità",
+                  "no": "Øk lysstyrken",
+                  "sv": "Öka ljusstyrkan",
+                  "pl": "Zwiększ jasność",
+                  "ru": "Увеличить яркость",
+                  "ko": "밝기 높이기"
                 }
               },
               {
@@ -385,7 +983,16 @@
                 "label": {
                   "en": "Decrease brightness",
                   "nl": "Verlaag helderheid",
-                  "de": "Helligkeit verringern"
+                  "de": "Helligkeit verringern",
+                  "da": "Formindsk lysstyrken",
+                  "es": "Disminuir brillo",
+                  "fr": "Diminuer la luminosité",
+                  "it": "Diminuire la luminosità",
+                  "no": "Reduser lysstyrken",
+                  "sv": "Minska ljusstyrkan",
+                  "pl": "Zmniejsz jasność",
+                  "ru": "Уменьшить яркость",
+                  "ko": "밝기 낮추기"
                 }
               },
               {
@@ -393,7 +1000,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Éteint",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выкл",
+                  "ko": "끄기"
                 }
               }
             ]
@@ -405,11 +1021,29 @@
         "title": {
           "en": "A button is pressed",
           "nl": "Een knop is ingedrukt",
-          "de": "Eine Taste wird gedrückt"
+          "de": "Eine Taste wird gedrückt",
+          "da": "En knap trykkes på",
+          "es": "Se presiona un botón",
+          "fr": "Un bouton est pressé",
+          "it": "Un pulsante viene premuto",
+          "no": "En knapp er trykket",
+          "sv": "En knapp trycks",
+          "pl": "Przycisk jest naciśnięty",
+          "ru": "Кнопка нажата",
+          "ko": "버튼이 눌려졌습니다"
         },
         "titleFormatted": {
           "en": "The [[button]] button is pressed",
-          "nl": "De [[button]] knop is ingedrukt"
+          "nl": "De [[button]] knop is ingedrukt",
+          "da": "[[button]]-knappen trykkes på",
+          "es": "El botón [[button]] es presionado",
+          "fr": "Le bouton [[button]] est pressé",
+          "it": "Il pulsante [[button]] è premuto",
+          "no": "[[button]]-knappen er trykket",
+          "sv": "[[button]]-knappen trycks",
+          "pl": "Przycisk [[button]] jest naciśnięty",
+          "ru": "Кнопка [[button]] нажата",
+          "ko": "[[button]] 버튼이 눌려졌습니다"
         },
         "args": [
           {
@@ -422,14 +1056,32 @@
             "type": "dropdown",
             "title": {
               "en": "Button",
-              "nl": "Knop"
+              "nl": "Knop",
+              "da": "Knap",
+              "es": "Botón",
+              "fr": "Bouton",
+              "it": "Pulsante",
+              "no": "Knapp",
+              "sv": "Knapp",
+              "pl": "Przycisk",
+              "ru": "Кнопка",
+              "ko": "버튼"
             },
             "values": [
               {
                 "id": "on",
                 "label": {
                   "en": "On",
-                  "nl": "Aan"
+                  "nl": "Aan",
+                  "da": "Tændt",
+                  "es": "Encendido",
+                  "fr": "Allumé",
+                  "it": "Acceso",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Włączony",
+                  "ru": "Включено",
+                  "ko": "켜짐"
                 }
               },
               {
@@ -437,7 +1089,16 @@
                 "label": {
                   "en": "Increase brightness",
                   "nl": "Verhoog helderheid",
-                  "de": "Helligkeit erhöhen"
+                  "de": "Helligkeit erhöhen",
+                  "da": "Øg lysstyrken",
+                  "es": "Aumentar brillo",
+                  "fr": "Augmenter la luminosité",
+                  "it": "Aumenta la luminosità",
+                  "no": "Øk lysstyrken",
+                  "sv": "Öka ljusstyrkan",
+                  "pl": "Zwiększ jasność",
+                  "ru": "Увеличить яркость",
+                  "ko": "밝기 증가"
                 }
               },
               {
@@ -445,13 +1106,31 @@
                 "label": {
                   "en": "Decrease brightness",
                   "nl": "Verlaag helderheid",
-                  "de": "Helligkeit verringern"
+                  "de": "Helligkeit verringern",
+                  "da": "Sænk lysstyrken",
+                  "es": "Disminuir brillo",
+                  "fr": "Diminuer la luminosité",
+                  "it": "Diminuisci la luminosità",
+                  "no": "Reduser lysstyrken",
+                  "sv": "Minska ljusstyrkan",
+                  "pl": "Zmniejsz jasność",
+                  "ru": "Уменьшить яркость",
+                  "ko": "밝기 감소"
                 }
               },
               {
                 "id": "hue",
                 "label": {
-                  "en": "Hue"
+                  "en": "Hue",
+                  "da": "Farvetone",
+                  "es": "Matiz",
+                  "fr": "Teinte",
+                  "it": "Tonalità",
+                  "no": "Fargetone",
+                  "sv": "Färgton",
+                  "pl": "Odcień",
+                  "ru": "Оттенок",
+                  "ko": "색조"
                 }
               }
             ]
@@ -459,86 +1138,248 @@
         ]
       },
       {
+        "deprecated": true,
         "id": "module_rocker_button_one_pressed",
         "title": {
           "en": "Button (1) has been pressed",
-          "nl": "Knop (1) is ingedrukt"
+          "nl": "Knop (1) is ingedrukt",
+          "da": "Knap (1) er blevet trykket",
+          "de": "Taste (1) wurde gedrückt",
+          "es": "Botón (1) ha sido presionado",
+          "fr": "Le bouton (1) a été pressé",
+          "it": "Il pulsante (1) è stato premuto",
+          "no": "Knapp (1) er blitt trykket",
+          "sv": "Knapp (1) har tryckts",
+          "pl": "Przycisk (1) został naciśnięty",
+          "ru": "Кнопка (1) была нажата",
+          "ko": "버튼(1)이 눌렸습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=module&capabilities=module-type-rocker"
+            "filter": "driver_id=module&capabilities=module-type-rocker-single|module-type-rocker-double"
           }
         ]
       },
       {
+        "deprecated": true,
         "id": "module_rocker_button_two_pressed",
         "title": {
           "en": "Button (2) has been pressed",
-          "nl": "Knop (2) is ingedrukt"
+          "nl": "Knop (2) is ingedrukt",
+          "da": "Knap (2) er blevet trykket",
+          "de": "Taste (2) wurde gedrückt",
+          "es": "Botón (2) ha sido presionado",
+          "fr": "Le bouton (2) a été pressé",
+          "it": "Il pulsante (2) è stato premuto",
+          "no": "Knapp (2) er blitt trykket",
+          "sv": "Knapp (2) har tryckts",
+          "pl": "Przycisk (2) został naciśnięty",
+          "ru": "Кнопка (2) была нажата",
+          "ko": "버튼(2)이 눌렸습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=module&capabilities=module-type-rocker"
+            "filter": "driver_id=module&capabilities=module-type-rocker-double"
           }
         ]
       },
       {
+        "deprecated": true,
         "id": "module_push_button_one_turned_on",
         "title": {
           "en": "Button (1) has been turned on",
-          "nl": "Knop (1) is aangezet"
+          "nl": "Knop (1) is aangezet",
+          "da": "Knap (1) er blevet tændt",
+          "de": "Taste (1) wurde eingeschaltet",
+          "es": "Botón (1) ha sido encendido",
+          "fr": "Le bouton (1) a été allumé",
+          "it": "Il pulsante (1) è stato acceso",
+          "no": "Knapp (1) er blitt slått på",
+          "sv": "Knapp (1) har slagits på",
+          "pl": "Przycisk (1) został włączony",
+          "ru": "Кнопка (1) была включена",
+          "ko": "버튼(1)이 켜졌습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=module&capabilities=module-type-push"
+            "filter": "driver_id=module&capabilities=module-type-push-single|module-type-push-double"
           }
         ]
       },
       {
+        "deprecated": true,
         "id": "module_push_button_one_turned_off",
         "title": {
           "en": "Button (1) has been turned off",
-          "nl": "Knop (1) is uitgezet"
+          "nl": "Knop (1) is uitgezet",
+          "da": "Knap (1) er blevet slukket",
+          "de": "Taste (1) wurde ausgeschaltet",
+          "es": "Botón (1) ha sido apagado",
+          "fr": "Le bouton (1) a été éteint",
+          "it": "Il pulsante (1) è stato spento",
+          "no": "Knapp (1) er blitt slått av",
+          "sv": "Knapp (1) har stängts av",
+          "pl": "Przycisk (1) został wyłączony",
+          "ru": "Кнопка (1) была выключена",
+          "ko": "버튼(1)이 꺼졌습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=module&capabilities=module-type-push"
+            "filter": "driver_id=module&capabilities=module-type-push-single|module-type-push-double"
           }
         ]
       },
       {
+        "deprecated": true,
         "id": "module_push_button_two_turned_on",
         "title": {
           "en": "Button (2) has been turned on",
-          "nl": "Knop (2) is aangezet"
+          "nl": "Knop (2) is aangezet",
+          "da": "Knap (2) er blevet tændt",
+          "de": "Taste (2) wurde eingeschaltet",
+          "es": "Botón (2) ha sido encendido",
+          "fr": "Le bouton (2) a été allumé",
+          "it": "Il pulsante (2) è stato acceso",
+          "no": "Knapp (2) er blitt slått på",
+          "sv": "Knapp (2) har slagits på",
+          "pl": "Przycisk (2) został włączony",
+          "ru": "Кнопка (2) была включена",
+          "ko": "버튼(2)이 켜졌습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=module&capabilities=module-type-push"
+            "filter": "driver_id=module&capabilities=module-type-push-double"
           }
         ]
       },
       {
+        "deprecated": true,
         "id": "module_push_button_two_turned_off",
         "title": {
           "en": "Button (2) has been turned off",
-          "nl": "Knop (2) is uitgezet"
+          "nl": "Knop (2) is uitgezet",
+          "da": "Knap (2) er blevet slukket",
+          "de": "Taste (2) wurde ausgeschaltet",
+          "es": "Botón (2) ha sido apagado",
+          "fr": "Le bouton (2) a été éteint",
+          "it": "Il pulsante (2) è stato spento",
+          "no": "Knapp (2) er blitt slått av",
+          "sv": "Knapp (2) har stängts av",
+          "pl": "Przycisk (2) został wyłączony",
+          "ru": "Кнопка (2) была выключена",
+          "ko": "버튼(2)이 꺼졌습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=module&capabilities=module-type-push"
+            "filter": "driver_id=module&capabilities=module-type-push-double"
+          }
+        ]
+      },
+      {
+        "id": "module_rocker_one_toggled",
+        "title": {
+          "en": "Rocker button 1 is toggled",
+          "nl": "Tuimelknop 1 is omgezet",
+          "da": "Rocker-knap 1 er vippet",
+          "de": "Wipptaste 1 ist umgeschaltet",
+          "es": "Botón basculante 1 está alternado",
+          "fr": "Le bouton bascule 1 est basculé",
+          "it": "Pulsante a bilanciere 1 è attivato",
+          "no": "Rocker knapp 1 er vippet",
+          "sv": "Växelknapp 1 är växlad",
+          "pl": "Przycisk kołyskowy 1 jest przełączony",
+          "ru": "Кнопка-качель 1 переключена",
+          "ko": "로커 버튼 1이 전환되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=module&capabilities=module-type-rocker-single|module-type-rocker-double"
+          }
+        ]
+      },
+      {
+        "id": "module_rocker_two_toggled",
+        "title": {
+          "en": "Rocker button 2 is toggled",
+          "nl": "Tuimelknop 2 is omgezet",
+          "da": "Rocker-knap 2 er vippet",
+          "de": "Wipptaste 2 ist umgeschaltet",
+          "es": "Botón basculante 2 está alternado",
+          "fr": "Le bouton bascule 2 est basculé",
+          "it": "Pulsante a bilanciere 2 è attivato",
+          "no": "Rocker knapp 2 er vippet",
+          "sv": "Växelknapp 2 är växlad",
+          "pl": "Przycisk kołyskowy 2 jest przełączony",
+          "ru": "Кнопка-качель 2 переключена",
+          "ko": "로커 버튼 2이 전환되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=module&capabilities=module-type-rocker-double"
+          }
+        ]
+      },
+      {
+        "id": "module_push_one_pressed",
+        "title": {
+          "en": "Button 1 is pressed",
+          "nl": "Knop 1 is ingedrukt",
+          "da": "Knap 1 er trykket",
+          "de": "Taste 1 ist gedrückt",
+          "es": "Botón 1 está presionado",
+          "fr": "Le bouton 1 est pressé",
+          "it": "Il pulsante 1 è premuto",
+          "no": "Knapp 1 er trykket",
+          "sv": "Knapp 1 är intryckt",
+          "pl": "Przycisk 1 jest wciśnięty",
+          "ru": "Кнопка 1 нажата",
+          "ko": "버튼 1이 눌렸습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=module&capabilities=module-type-push-single|module-type-push-double"
+          }
+        ]
+      },
+      {
+        "id": "module_push_two_pressed",
+        "title": {
+          "en": "Button 2 is pressed",
+          "nl": "Knop 2 is ingedrukt",
+          "da": "Knap 2 er trykket",
+          "de": "Taste 2 ist gedrückt",
+          "es": "Botón 2 está presionado",
+          "fr": "Le bouton 2 est pressé",
+          "it": "Il pulsante 2 è premuto",
+          "no": "Knapp 2 er trykket",
+          "sv": "Knapp 2 är intryckt",
+          "pl": "Przycisk 2 jest wciśnięty",
+          "ru": "Кнопка 2 нажата",
+          "ko": "버튼 2이 눌렸습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=module&capabilities=module-type-push-double"
           }
         ]
       },
@@ -546,11 +1387,31 @@
         "id": "hdmi-input_switched",
         "title": {
           "en": "Input Changed",
-          "nl": "Input Veranderd"
+          "nl": "Input Veranderd",
+          "da": "Input ændret",
+          "de": "Eingang geändert",
+          "es": "Entrada cambiada",
+          "fr": "Entrée changée",
+          "it": "Ingresso cambiato",
+          "no": "Inngang endret",
+          "sv": "Ingång ändrad",
+          "pl": "Wejście zmienione",
+          "ru": "Вход изменён",
+          "ko": "입력 변경됨"
         },
         "titleFormatted": {
           "en": "Input changed to [[input]]",
-          "nl": "Input veranderd naar [[input]]"
+          "nl": "Input veranderd naar [[input]]",
+          "da": "Input ændret til [[input]]",
+          "de": "Eingang geändert zu [[input]]",
+          "es": "Entrada cambiada a [[input]]",
+          "fr": "Entrée changée en [[input]]",
+          "it": "Ingresso cambiato a [[input]]",
+          "no": "Inngang endret til [[input]]",
+          "sv": "Ingång ändrad till [[input]]",
+          "pl": "Wejście zmienione na [[input]]",
+          "ru": "Вход изменён на [[input]]",
+          "ko": "[[input]](으)로 입력 변경됨"
         },
         "args": [
           {
@@ -562,8 +1423,66 @@
             "name": "input",
             "type": "autocomplete",
             "title": {
-              "en": "Input"
+              "en": "Input",
+              "da": "Input",
+              "de": "Eingabe",
+              "es": "Entrada",
+              "fr": "Entrée",
+              "it": "Ingresso",
+              "no": "Inngang",
+              "sv": "Ingång",
+              "pl": "Wejście",
+              "ru": "Вход",
+              "ko": "입력"
             }
+          }
+        ]
+      },
+      {
+        "id": "sync_true",
+        "title": {
+          "en": "Sync On",
+          "nl": "Sync Aan",
+          "da": "Synkronisering på",
+          "de": "Synchronisierung ein",
+          "es": "Sincronización activada",
+          "fr": "Synchronisation activée",
+          "it": "Sincro Attiva",
+          "no": "Synkronisering på",
+          "sv": "Synkronisering på",
+          "pl": "Synchronizacja włączona",
+          "ru": "Синхронизация включена",
+          "ko": "동기화 켜짐"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sync-box"
+          }
+        ]
+      },
+      {
+        "id": "sync_false",
+        "title": {
+          "en": "Sync Off",
+          "nl": "Sync Uit",
+          "da": "Synkronisering fra",
+          "de": "Synchronisierung aus",
+          "es": "Sincronización desactivada",
+          "fr": "Synchronisation désactivée",
+          "it": "Sincro Disattiva",
+          "no": "Synkronisering av",
+          "sv": "Synkronisering av",
+          "pl": "Synchronizacja wyłączona",
+          "ru": "Синхронизация отключена",
+          "ko": "동기화 꺼짐"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sync-box"
           }
         ]
       },
@@ -572,11 +1491,29 @@
         "title": {
           "en": "A button is pressed",
           "nl": "Een knop is ingedrukt",
-          "de": "Eine Taste wird gedrückt"
+          "de": "Eine Taste wird gedrückt",
+          "da": "En knap er trykket",
+          "es": "Se ha pulsado un botón",
+          "fr": "Un bouton est pressé",
+          "it": "Un pulsante è premuto",
+          "no": "En knapp er trykket",
+          "sv": "En knapp är tryckt",
+          "pl": "Przycisk jest wciśnięty",
+          "ru": "Кнопка нажата",
+          "ko": "버튼이 눌렸습니다"
         },
         "titleFormatted": {
           "en": "[[button]] is pressed",
-          "nl": "[[button]] is ingedrukt"
+          "nl": "[[button]] is ingedrukt",
+          "da": "[[button]] er trykket",
+          "es": "Se ha pulsado [[button]]",
+          "fr": "[[button]] est pressé",
+          "it": "[[button]] è premuto",
+          "no": "[[button]] er trykket",
+          "sv": "[[button]] är tryckt",
+          "pl": "[[button]] jest wciśnięty",
+          "ru": "[[button]] нажата",
+          "ko": "[[button]]이 눌렸습니다"
         },
         "args": [
           {
@@ -589,7 +1526,16 @@
             "type": "dropdown",
             "title": {
               "en": "Button",
-              "nl": "Knop"
+              "nl": "Knop",
+              "da": "Knap",
+              "es": "Botón",
+              "fr": "Bouton",
+              "it": "Pulsante",
+              "no": "Knapp",
+              "sv": "Knapp",
+              "pl": "Przycisk",
+              "ru": "Кнопка",
+              "ko": "버튼"
             },
             "values": [
               {
@@ -597,7 +1543,16 @@
                 "label": {
                   "en": "Button 1",
                   "nl": "Knop 1",
-                  "de": "Taste 1"
+                  "de": "Taste 1",
+                  "da": "Knap 1",
+                  "es": "Botón 1",
+                  "fr": "Bouton 1",
+                  "it": "Pulsante 1",
+                  "no": "Knapp 1",
+                  "sv": "Knapp 1",
+                  "pl": "Przycisk 1",
+                  "ru": "Кнопка 1",
+                  "ko": "버튼 1"
                 }
               },
               {
@@ -605,7 +1560,16 @@
                 "label": {
                   "en": "Button 2",
                   "nl": "Knop 2",
-                  "de": "Taste 2"
+                  "de": "Taste 2",
+                  "da": "Knap 2",
+                  "es": "Botón 2",
+                  "fr": "Bouton 2",
+                  "it": "Pulsante 2",
+                  "no": "Knapp 2",
+                  "sv": "Knapp 2",
+                  "pl": "Przycisk 2",
+                  "ru": "Кнопка 2",
+                  "ko": "버튼 2"
                 }
               },
               {
@@ -613,7 +1577,16 @@
                 "label": {
                   "en": "Button 3",
                   "nl": "Knop 3",
-                  "de": "Taste 3"
+                  "de": "Taste 3",
+                  "da": "Knap 3",
+                  "es": "Botón 3",
+                  "fr": "Bouton 3",
+                  "it": "Pulsante 3",
+                  "no": "Knapp 3",
+                  "sv": "Knapp 3",
+                  "pl": "Przycisk 3",
+                  "ru": "Кнопка 3",
+                  "ko": "버튼 3"
                 }
               },
               {
@@ -621,7 +1594,16 @@
                 "label": {
                   "en": "Button 4",
                   "nl": "Knop 4",
-                  "de": "Taste 4"
+                  "de": "Taste 4",
+                  "da": "Knap 4",
+                  "es": "Botón 4",
+                  "fr": "Bouton 4",
+                  "it": "Pulsante 4",
+                  "no": "Knapp 4",
+                  "sv": "Knapp 4",
+                  "pl": "Przycisk 4",
+                  "ru": "Кнопка 4",
+                  "ko": "버튼 4"
                 }
               }
             ]
@@ -633,11 +1615,29 @@
         "title": {
           "en": "A button is pressed",
           "nl": "Een knop is ingedrukt",
-          "de": "Eine Taste wird gedrückt"
+          "de": "Eine Taste wird gedrückt",
+          "da": "En knap er trykket",
+          "es": "Se pulsa un botón",
+          "fr": "Un bouton est pressé",
+          "it": "Un pulsante è premuto",
+          "no": "En knapp er trykket",
+          "sv": "En knapp är tryckt",
+          "pl": "Przycisk został naciśnięty",
+          "ru": "Кнопка нажата",
+          "ko": "버튼이 눌러짐"
         },
         "titleFormatted": {
           "en": "[[button]] is pressed",
-          "nl": "[[button]] is ingedrukt"
+          "nl": "[[button]] is ingedrukt",
+          "da": "[[button]] er trykket",
+          "es": "Se pulsa [[button]]",
+          "fr": "[[button]] est pressé",
+          "it": "[[button]] è premuto",
+          "no": "[[button]] er trykket",
+          "sv": "[[button]] är tryckt",
+          "pl": "[[button]] został naciśnięty",
+          "ru": "Кнопка [[button]] нажата",
+          "ko": "[[button]]이(가) 눌러짐"
         },
         "args": [
           {
@@ -650,7 +1650,16 @@
             "type": "dropdown",
             "title": {
               "en": "Button",
-              "nl": "Knop"
+              "nl": "Knop",
+              "da": "Knap",
+              "es": "Botón",
+              "fr": "Bouton",
+              "it": "Pulsante",
+              "no": "Knapp",
+              "sv": "Knapp",
+              "pl": "Przycisk",
+              "ru": "Кнопка",
+              "ko": "버튼"
             },
             "values": [
               {
@@ -658,7 +1667,16 @@
                 "label": {
                   "en": "Button 1",
                   "nl": "Knop 1",
-                  "de": "Taste 1"
+                  "de": "Taste 1",
+                  "da": "Knap 1",
+                  "es": "Botón 1",
+                  "fr": "Bouton 1",
+                  "it": "Pulsante 1",
+                  "no": "Knapp 1",
+                  "sv": "Knapp 1",
+                  "pl": "Przycisk 1",
+                  "ru": "Кнопка 1",
+                  "ko": "버튼 1"
                 }
               },
               {
@@ -666,7 +1684,16 @@
                 "label": {
                   "en": "Button 2",
                   "nl": "Knop 2",
-                  "de": "Taste 2"
+                  "de": "Taste 2",
+                  "da": "Knap 2",
+                  "es": "Botón 2",
+                  "fr": "Bouton 2",
+                  "it": "Pulsante 2",
+                  "no": "Knapp 2",
+                  "sv": "Knapp 2",
+                  "pl": "Przycisk 2",
+                  "ru": "Кнопка 2",
+                  "ko": "버튼 2"
                 }
               },
               {
@@ -674,7 +1701,16 @@
                 "label": {
                   "en": "Button 3",
                   "nl": "Knop 3",
-                  "de": "Taste 3"
+                  "de": "Taste 3",
+                  "da": "Knap 3",
+                  "es": "Botón 3",
+                  "fr": "Bouton 3",
+                  "it": "Pulsante 3",
+                  "no": "Knapp 3",
+                  "sv": "Knapp 3",
+                  "pl": "Przycisk 3",
+                  "ru": "Кнопка 3",
+                  "ko": "버튼 3"
                 }
               },
               {
@@ -682,7 +1718,285 @@
                 "label": {
                   "en": "Button 4",
                   "nl": "Knop 4",
-                  "de": "Taste 4"
+                  "de": "Taste 4",
+                  "da": "Knap 4",
+                  "es": "Botón 4",
+                  "fr": "Bouton 4",
+                  "it": "Pulsante 4",
+                  "no": "Knapp 4",
+                  "sv": "Knapp 4",
+                  "pl": "Przycisk 4",
+                  "ru": "Кнопка 4",
+                  "ko": "버튼 4"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tapdial_dial_rotation_stopped",
+        "title": {
+          "en": "Dial stops rotating",
+          "nl": "Knop stopt draai",
+          "da": "Drejeknap stopper med at rotere",
+          "es": "El dial deja de girar",
+          "fr": "Le cadran s'arrête de tourner",
+          "it": "Il quadrante smette di ruotare",
+          "no": "Dreinapp stopper å rotere",
+          "sv": "Vred slutar rotera",
+          "pl": "Pokrętło przestaje się obracać",
+          "ru": "Циферблат перестает вращаться",
+          "ko": "다이얼 회전 멈춤"
+        },
+        "titleFormatted": {
+          "en": "Dial stops rotating [[rotate_direction]]",
+          "nl": "Knop stopt draai [[rotate_direction]]",
+          "da": "Drejeknap stopper med at rotere [[rotate_direction]]",
+          "es": "El dial deja de girar [[rotate_direction]]",
+          "fr": "Le cadran s'arrête de tourner [[rotate_direction]]",
+          "it": "Il quadrante smette di ruotare [[rotate_direction]]",
+          "no": "Dreinapp stopper å rotere [[rotate_direction]]",
+          "sv": "Vred slutar rotera [[rotate_direction]]",
+          "pl": "Pokrętło przestaje się obracać [[rotate_direction]]",
+          "ru": "Циферблат перестает вращаться [[rotate_direction]]",
+          "ko": "다이얼 회전 멈춤 [[rotate_direction]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tapdial"
+          },
+          {
+            "name": "rotate_direction",
+            "type": "dropdown",
+            "title": {
+              "en": "Direction",
+              "nl": "Richting",
+              "da": "Retning",
+              "es": "Dirección",
+              "fr": "Direction",
+              "it": "Direzione",
+              "no": "Retning",
+              "sv": "Riktning",
+              "pl": "Kierunek",
+              "ru": "Направление",
+              "ko": "방향"
+            },
+            "values": [
+              {
+                "id": "either",
+                "label": {
+                  "en": "Either way",
+                  "nl": "Een kant op",
+                  "da": "Begge retninger",
+                  "es": "Cualquiera",
+                  "fr": "Dans les deux sens",
+                  "it": "In entrambi i modi",
+                  "no": "Enten vei",
+                  "sv": "Åt båda hållen",
+                  "pl": "Oba kierunki",
+                  "ru": "Любое направление",
+                  "ko": "어느 쪽이든"
+                }
+              },
+              {
+                "id": "counter_clock_wise",
+                "label": {
+                  "en": "Counter clockwise",
+                  "nl": "Linksom",
+                  "da": "Mod uret",
+                  "es": "Contrario a las agujas del reloj",
+                  "fr": "Dans le sens inverse des aiguilles d'une montre",
+                  "it": "In senso antiorario",
+                  "no": "Mot urviseren",
+                  "sv": "Moturs",
+                  "pl": "Przeciwnie do ruchu wskazówek zegara",
+                  "ru": "Против часовой стрелки",
+                  "ko": "시계 반대 방향"
+                }
+              },
+              {
+                "id": "clock_wise",
+                "label": {
+                  "en": "Clockwise",
+                  "nl": "Rechtsom",
+                  "da": "Med uret",
+                  "es": "En el sentido de las agujas del reloj",
+                  "fr": "Dans le sens des aiguilles d'une montre",
+                  "it": "In senso orario",
+                  "no": "Med urviseren",
+                  "sv": "Medurs",
+                  "pl": "Zgodnie z ruchem wskazówek zegara",
+                  "ru": "По часовой стрелке",
+                  "ko": "시계 방향"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "steps",
+            "type": "number",
+            "title": {
+              "en": "Steps (1000/turn)",
+              "nl": "Stappen (1000/draai)",
+              "da": "Skridt (1000/omdrejning)",
+              "es": "Pasos (1000/vuelta)",
+              "fr": "Étapes (1000/tour)",
+              "it": "Passi (1000/giro)",
+              "no": "Steg (1000/omdreining)",
+              "sv": "Steg (1000/varv)",
+              "pl": "Kroki (1000/obrót)",
+              "ru": "Шаги (1000/оборот)",
+              "ko": "단계 (1000/회전)"
+            },
+            "example": 424
+          }
+        ]
+      },
+      {
+        "id": "tapdial_dial_rotation_dimmed",
+        "title": {
+          "en": "Dial dimmed",
+          "nl": "Knop gedimd",
+          "da": "Drejeknap dæmpet",
+          "es": "Dial atenuado",
+          "fr": "Cadran atténué",
+          "it": "Quadrante oscurato",
+          "no": "Dreinapp dempet",
+          "sv": "Vred dimmat",
+          "pl": "Pokrętło przyciemnione",
+          "ru": "Циферблат затемнен",
+          "ko": "다이얼이 어두워짐"
+        },
+        "tokens": [
+          {
+            "name": "dim_level",
+            "type": "number",
+            "title": {
+              "en": "Resulting dim level",
+              "nl": "Resulterend dim niveau",
+              "da": "Resulterende dæmpningsniveau",
+              "es": "Nivel de atenuación resultante",
+              "fr": "Niveau de gradation résultant",
+              "it": "Livello di oscuramento risultante",
+              "no": "Resulterende dempningsnivå",
+              "sv": "Resulterande dimningsnivå",
+              "pl": "Wynikowy poziom przyciemnienia",
+              "ru": "Результирующий уровень затемнения",
+              "ko": "결과적인 어두운 수준"
+            },
+            "example": 0.6
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tapdial"
+          }
+        ]
+      },
+      {
+        "id": "tapdial_dial_rotation_started",
+        "title": {
+          "en": "Dial rotated",
+          "nl": "Knop gedraaid",
+          "da": "Drejeknap drejet",
+          "es": "Dial girado",
+          "fr": "Cadran tourné",
+          "it": "Quadrante ruotato",
+          "no": "Dreinapp rotert",
+          "sv": "Vred roterat",
+          "pl": "Pokrętło obrócone",
+          "ru": "Циферблат повернут",
+          "ko": "다이얼 회전"
+        },
+        "titleFormatted": {
+          "en": "Dial is rotating [[rotate_direction]]",
+          "nl": "Knop draait [[rotate_direction]]",
+          "da": "Drejeknap roterer [[rotate_direction]]",
+          "es": "El dial está girando [[rotate_direction]]",
+          "fr": "Le cadran tourne [[rotate_direction]]",
+          "it": "Il quadrante sta ruotando [[rotate_direction]]",
+          "no": "Dreinapp roterer [[rotate_direction]]",
+          "sv": "Vred roterar [[rotate_direction]]",
+          "pl": "Pokrętło się obraca [[rotate_direction]]",
+          "ru": "Циферблат вращается [[rotate_direction]]",
+          "ko": "다이얼이 회전 중 [[rotate_direction]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tapdial"
+          },
+          {
+            "name": "rotate_direction",
+            "type": "dropdown",
+            "title": {
+              "en": "Direction",
+              "nl": "Richting",
+              "da": "Retning",
+              "es": "Dirección",
+              "fr": "Direction",
+              "it": "Direzione",
+              "no": "Retning",
+              "sv": "Riktning",
+              "pl": "Kierunek",
+              "ru": "Направление",
+              "ko": "방향"
+            },
+            "values": [
+              {
+                "id": "either",
+                "label": {
+                  "en": "Either way",
+                  "nl": "Een kant op",
+                  "da": "Begge retninger",
+                  "es": "Cualquiera",
+                  "fr": "Dans les deux sens",
+                  "it": "In entrambi i modi",
+                  "no": "Enten vei",
+                  "sv": "Åt båda hållen",
+                  "pl": "Oba kierunki",
+                  "ru": "Любое направление",
+                  "ko": "어느 쪽이든"
+                }
+              },
+              {
+                "id": "counter_clock_wise",
+                "label": {
+                  "en": "Counter clockwise",
+                  "nl": "Linksom",
+                  "da": "Mod uret",
+                  "es": "Contrario a las agujas del reloj",
+                  "fr": "Dans le sens inverse des aiguilles d'une montre",
+                  "it": "In senso antiorario",
+                  "no": "Mot urviseren",
+                  "sv": "Moturs",
+                  "pl": "Przeciwnie do ruchu wskazówek zegara",
+                  "ru": "Против часовой стрелки",
+                  "ko": "시계 반대 방향"
+                }
+              },
+              {
+                "id": "clock_wise",
+                "label": {
+                  "en": "Clockwise",
+                  "nl": "Rechtsom",
+                  "da": "Med uret",
+                  "es": "En el sentido de las agujas del reloj",
+                  "fr": "Dans le sens des aiguilles d'une montre",
+                  "it": "In senso orario",
+                  "no": "Med urviseren",
+                  "sv": "Medurs",
+                  "pl": "Zgodnie z ruchem wskazówek zegara",
+                  "ru": "По часовой стрелке",
+                  "ko": "시계 방향"
                 }
               }
             ]
@@ -707,7 +2021,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -743,7 +2068,18 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
@@ -751,7 +2087,16 @@
       "name": {
         "en": "Light",
         "nl": "Lamp",
-        "de": "Licht"
+        "de": "Licht",
+        "da": "Lys",
+        "es": "Luz",
+        "fr": "Lumière",
+        "it": "Luce",
+        "no": "Lys",
+        "sv": "Ljus",
+        "pl": "Światło",
+        "ru": "Свет",
+        "ko": "빛"
       },
       "class": "light",
       "capabilities": [
@@ -824,7 +2169,18 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
@@ -832,7 +2188,16 @@
       "name": {
         "en": "Light",
         "nl": "Lamp",
-        "de": "Licht"
+        "de": "Licht",
+        "da": "Lys",
+        "es": "Luz",
+        "fr": "Lumière",
+        "it": "Luce",
+        "no": "Lys",
+        "sv": "Ljus",
+        "pl": "Światło",
+        "ru": "Свет",
+        "ko": "빛"
       },
       "class": "light",
       "capabilities": [
@@ -884,7 +2249,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -920,13 +2296,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Smart button"
+        "en": "Smart button",
+        "nl": "Slimme knop",
+        "da": "Smart knap",
+        "de": "Intelligenter Knopf",
+        "es": "Botón inteligente",
+        "fr": "Bouton intelligent",
+        "it": "Pulsante intelligente",
+        "no": "Smart knapp",
+        "sv": "Smart knapp",
+        "pl": "Inteligentny przycisk",
+        "ru": "Умная кнопка",
+        "ko": "스마트 버튼"
       },
       "class": "sensor",
       "capabilities": [],
@@ -934,6 +2332,114 @@
         "local"
       ],
       "id": "button"
+    },
+    {
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "large": "/drivers/contactsensor/assets/images/large.png",
+        "small": "/drivers/contactsensor/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "list_bridges",
+          "template": "list_devices",
+          "options": {
+            "singular": true,
+            "title": {
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
+            }
+          },
+          "navigation": {
+            "next": "check_authentication"
+          }
+        },
+        {
+          "id": "check_authentication",
+          "template": "loading"
+        },
+        {
+          "id": "authenticate"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "authenticate"
+        }
+      ],
+      "settings": [
+        {
+          "id": "Model_ID",
+          "type": "label",
+          "label": {
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
+          },
+          "value": ""
+        }
+      ],
+      "name": {
+        "en": "Contact Sensor",
+        "nl": "Contactsensor",
+        "de": "Kontaktsensor",
+        "da": "Kontaktsensor",
+        "es": "Sensor de contacto",
+        "fr": "Capteur de contact",
+        "it": "Sensore di contatto",
+        "no": "Kontaktsensor",
+        "sv": "Kontaktsensor",
+        "pl": "Czujnik kontaktowy",
+        "ru": "Контактный датчик",
+        "ko": "접촉 센서"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact",
+        "alarm_tamper",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2"
+        ]
+      },
+      "platforms": [
+        "local"
+      ],
+      "id": "contactsensor"
     },
     {
       "connectivity": [
@@ -950,7 +2456,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -986,13 +2503,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Dimmer switch"
+        "en": "Dimmer switch",
+        "nl": "Dimmer schakelaar",
+        "da": "Dæmperkontakt",
+        "de": "Dimmschalter",
+        "es": "Interruptor de regulador",
+        "fr": "Interrupteur variateur",
+        "it": "Interruttore dimmer",
+        "no": "Dimmebryter",
+        "sv": "Dimmerbrytare",
+        "pl": "Przełącznik ściemniacza",
+        "ru": "Диммер",
+        "ko": "디머 스위치"
       },
       "class": "sensor",
       "capabilities": [
@@ -1023,7 +2562,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -1059,13 +2609,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Dimmer switch 2"
+        "en": "Dimmer switch 2",
+        "nl": "Dimmer schakelaar 2",
+        "da": "Dæmpningskontakt 2",
+        "de": "Dimmschalter 2",
+        "es": "Interruptor de atenuación 2",
+        "fr": "Interrupteur variateur 2",
+        "it": "Interruttore dimmer 2",
+        "no": "Dimmerbryter 2",
+        "sv": "Dimmerswitch 2",
+        "pl": "Ściemniacz 2",
+        "ru": "Диммер 2",
+        "ko": "디머 스위치 2"
       },
       "class": "sensor",
       "capabilities": [
@@ -1073,7 +2645,7 @@
       ],
       "energy": {
         "batteries": [
-          "CR2450"
+          "CR2032"
         ]
       },
       "platforms": [
@@ -1096,7 +2668,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -1132,13 +2715,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Module"
+        "en": "Module",
+        "nl": "Module",
+        "da": "Modul",
+        "de": "Modul",
+        "es": "Módulo",
+        "fr": "Module",
+        "it": "Modulo",
+        "no": "Modul",
+        "sv": "Modul",
+        "pl": "Moduł",
+        "ru": "Модуль",
+        "ko": "모듈"
       },
       "class": "sensor",
       "capabilities": [
@@ -1169,7 +2774,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -1205,7 +2821,18 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
@@ -1213,7 +2840,16 @@
       "name": {
         "en": "Motion Sensor",
         "nl": "Bewegingssensor",
-        "de": "Bewegungssensor"
+        "de": "Bewegungssensor",
+        "da": "Bevægelsessensor",
+        "es": "Sensor de movimiento",
+        "fr": "Capteur de mouvement",
+        "it": "Sensore di movimento",
+        "no": "Bevegelsessensor",
+        "sv": "Rörelsesensor",
+        "pl": "Czujnik ruchu",
+        "ru": "Датчик движения",
+        "ko": "모션 센서"
       },
       "class": "sensor",
       "capabilities": [
@@ -1248,7 +2884,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -1284,13 +2931,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Plug"
+        "en": "Plug",
+        "nl": "Stekker",
+        "da": "Stik",
+        "de": "Stecker",
+        "es": "Enchufe",
+        "fr": "Prise",
+        "it": "Spina",
+        "no": "Plugg",
+        "sv": "Kontakt",
+        "pl": "Wtyczka",
+        "ru": "Вилка",
+        "ko": "플러그"
       },
       "class": "socket",
       "capabilities": [
@@ -1337,13 +3006,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Plug"
+        "en": "Plug",
+        "nl": "Stekker",
+        "da": "Stik",
+        "de": "Stecker",
+        "es": "Enchufe",
+        "fr": "Prise",
+        "it": "Spina",
+        "no": "Plugg",
+        "sv": "Kontakt",
+        "pl": "Wtyczka",
+        "ru": "Вилка",
+        "ko": "플러그"
       },
       "class": "socket",
       "capabilities": [
@@ -1357,13 +3048,25 @@
     {
       "id": "sync-box",
       "name": {
-        "en": "Sync Box"
+        "en": "Sync Box",
+        "nl": "Sync Box",
+        "da": "Sync Box",
+        "de": "Sync Box",
+        "es": "Sync Box",
+        "fr": "Sync Box",
+        "it": "Sync Box",
+        "no": "Sync Box",
+        "sv": "Sync Box",
+        "pl": "Sync Box",
+        "ru": "Sync Box",
+        "ko": "Sync Box"
       },
       "class": "other",
       "capabilities": [
         "dim",
         "onoff",
-        "hdmi-input"
+        "hdmi-input",
+        "sync"
       ],
       "connectivity": [
         "lan"
@@ -1396,7 +3099,18 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": "HSB1"
         }
@@ -1417,7 +3131,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -1453,13 +3178,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Tap"
+        "en": "Tap",
+        "nl": "Tik",
+        "da": "Tryk",
+        "de": "Tippen",
+        "es": "Toque",
+        "fr": "Appuyer",
+        "it": "Toccare",
+        "no": "Trykk",
+        "sv": "Tryck",
+        "pl": "Naciśnij",
+        "ru": "Нажатие",
+        "ko": "탭"
       },
       "class": "sensor",
       "capabilities": [],
@@ -1483,7 +3230,18 @@
           "options": {
             "singular": true,
             "title": {
-              "en": "Select your bridge..."
+              "en": "Select your bridge...",
+              "nl": "Selecteer je bridge...",
+              "da": "Vælg din bro...",
+              "de": "Wählen Sie Ihre Brücke...",
+              "es": "Selecciona tu puente...",
+              "fr": "Sélectionnez votre pont...",
+              "it": "Seleziona il tuo ponte...",
+              "no": "Velg din bro...",
+              "sv": "Välj din brygga...",
+              "pl": "Wybierz swój most...",
+              "ru": "Выберите свой мост...",
+              "ko": "다리를 선택하세요..."
             }
           },
           "navigation": {
@@ -1519,13 +3277,35 @@
           "id": "Model_ID",
           "type": "label",
           "label": {
-            "en": "Model"
+            "en": "Model",
+            "nl": "Model",
+            "da": "Model",
+            "de": "Modell",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "it": "Modello",
+            "no": "Modell",
+            "sv": "Modell",
+            "pl": "Model",
+            "ru": "Модель",
+            "ko": "모델"
           },
           "value": ""
         }
       ],
       "name": {
-        "en": "Tap Dial"
+        "en": "Tap Dial",
+        "nl": "Tap Dial",
+        "da": "Tap Dial",
+        "de": "Tap Dial",
+        "es": "Tap Dial",
+        "fr": "Tap Dial",
+        "it": "Tap Dial",
+        "no": "Tap Dial",
+        "sv": "Tap Dial",
+        "pl": "Tap Dial",
+        "ru": "Tap Dial",
+        "ko": "Tap Dial"
       },
       "class": "sensor",
       "capabilities": [
@@ -1545,7 +3325,18 @@
   "capabilities": {
     "hdmi-input": {
       "title": {
-        "en": "HDMI Input"
+        "en": "HDMI Input",
+        "nl": "HDMI-ingang",
+        "da": "HDMI-indgang",
+        "de": "HDMI-Eingang",
+        "es": "Entrada HDMI",
+        "fr": "Entrée HDMI",
+        "it": "Ingresso HDMI",
+        "no": "HDMI-inngang",
+        "sv": "HDMI-ingång",
+        "pl": "Wejście HDMI",
+        "ru": "HDMI вход",
+        "ko": "HDMI 입력"
       },
       "type": "enum",
       "getable": true,
@@ -1571,28 +3362,123 @@
     },
     "light-gradient": {
       "title": {
-        "en": "light-gradient"
+        "en": "light-gradient",
+        "nl": "lichtverloop",
+        "da": "lys-gradient",
+        "de": "Lichtverlauf",
+        "es": "gradiente de luz",
+        "fr": "gradient lumineux",
+        "it": "gradiente di luce",
+        "no": "lysgradient",
+        "sv": "ljusgradient",
+        "pl": "gradient światła",
+        "ru": "световой градиент",
+        "ko": "빛 그라디언트"
       },
       "type": "string",
       "getable": false,
       "setable": false,
       "uiComponent": null
     },
-    "module-type-push": {
+    "module-type-push-double": {
       "title": {
-        "en": "type-rocker"
+        "en": "type-push-double",
+        "nl": "type-push-double",
+        "da": "type-push-double",
+        "de": "type-push-double",
+        "es": "type-push-double",
+        "fr": "type-push-double",
+        "it": "type-push-double",
+        "no": "type-push-double",
+        "sv": "type-push-double",
+        "pl": "type-push-double",
+        "ru": "type-push-double",
+        "ko": "type-push-double"
       },
-      "type": "string",
+      "type": "boolean",
+      "value": true,
       "getable": false,
-      "setable": true
+      "setable": true,
+      "uiComponent": null
     },
-    "module-type-rocker": {
+    "module-type-push-single": {
       "title": {
-        "en": "type-rocker"
+        "en": "type-push-single",
+        "nl": "type-push-single",
+        "da": "type-push-single",
+        "de": "type-push-single",
+        "es": "type-push-single",
+        "fr": "type-push-single",
+        "it": "type-push-single",
+        "no": "type-push-single",
+        "sv": "type-push-single",
+        "pl": "type-push-single",
+        "ru": "type-push-single",
+        "ko": "type-push-single"
       },
-      "type": "string",
+      "type": "boolean",
+      "value": true,
       "getable": false,
-      "setable": true
+      "setable": true,
+      "uiComponent": null
+    },
+    "module-type-rocker-double": {
+      "title": {
+        "en": "type-rocker-double",
+        "nl": "type-rocker-double",
+        "da": "type-rocker-double",
+        "de": "type-rocker-double",
+        "es": "type-rocker-double",
+        "fr": "type-rocker-double",
+        "it": "type-rocker-double",
+        "no": "type-rocker-double",
+        "sv": "type-rocker-double",
+        "pl": "type-rocker-double",
+        "ru": "type-rocker-double",
+        "ko": "type-rocker-double"
+      },
+      "type": "boolean",
+      "value": true,
+      "getable": false,
+      "setable": true,
+      "uiComponent": null
+    },
+    "module-type-rocker-single": {
+      "title": {
+        "en": "type-rocker-single",
+        "nl": "type-rocker-single",
+        "da": "type-rocker-single",
+        "de": "type-rocker-single",
+        "es": "type-rocker-single",
+        "fr": "type-rocker-single",
+        "it": "type-rocker-single",
+        "no": "type-rocker-single",
+        "sv": "type-rocker-single",
+        "pl": "type-rocker-single",
+        "ru": "type-rocker-single",
+        "ko": "type-rocker-single"
+      },
+      "type": "boolean",
+      "value": true,
+      "getable": false,
+      "setable": true,
+      "uiComponent": null
+    },
+    "sync": {
+      "title": "Sync",
+      "type": "boolean",
+      "getable": true,
+      "setable": true,
+      "da": "Synkroniser",
+      "de": "Synchronisieren",
+      "es": "Sincronizar",
+      "fr": "Synchroniser",
+      "it": "Sincronizza",
+      "no": "Synkroniser",
+      "pl": "Synchronizuj",
+      "sv": "Synkronisera",
+      "ru": "Синхронизировать",
+      "ko": "동기화"
     }
   },
   "discovery": {

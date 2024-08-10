@@ -18,5 +18,12 @@
 	"no_bridges": "No bridges connected",
 	"unreachable": "Unreachable",
 	"all_lights": "All lights",
-	"any_hdmi_input": "Any"
+	"any_hdmi_input": "Any",
+	"effect_failed": "Effect could not be started",
+	"effect_soft_off": "Effect set but may not have effect as the bulb is off",
+	"effect_unsupported": "Effect not supported by bulb",
+	"device_offline": "The device could not be reached. Is it powered on?",
+	"request_failed": "Failed to communicate with the Hue Bridge. Try restarting your bridge, then restart the Philips Hue app.",
+	"rate_limit_retry": "Rate limit exceeded. This device will automatically try to repair itself in a few seconds.",
+	"rate_limit_error": "Rate limit exceeded. Please try again later."
 }

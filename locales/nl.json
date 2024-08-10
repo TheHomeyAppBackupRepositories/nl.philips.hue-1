@@ -17,5 +17,12 @@
 	"no_bridges": "Geen bridges verbonden",
 	"unreachable": "Onbereikbaar",
 	"all_lights": "Alle lampen",
-	"any_hdmi_input": "Elke"
+	"any_hdmi_input": "Elke",
+	"effect_failed": "Effect kon niet gestart worden",
+	"effect_soft_off": "Effect ingesteld, maar heeft mogelijk geen effect omdat de lamp uit is",
+	"effect_unsupported": "Effect niet ondersteund door lamp",
+	"device_offline": "Het apparaat kan niet worden bereikt. Controleer of het apparaat aangesloten is.",
+	"request_failed": "Communicatie met de Hue bridge mislukt. Probeer de bridge te herstarten, en start daarna de Philips Hue app opnieuw.",
+	"rate_limit_retry": "Rate limit overschreden. Dit apparaat zal automatisch proberen zichzelf te repareren in een paar seconden.",
+	"rate_limit_error": "Rate limit overschreden. Probeer het later opnieuw."
 }

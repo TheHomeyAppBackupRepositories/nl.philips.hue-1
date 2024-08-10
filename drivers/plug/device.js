@@ -7,12 +7,15 @@ class HueDeviceLocalPlug extends HueDeviceLocal {
 
   static HUE_DEVICE_TYPE = HueDevicePlug.HUE_DEVICE_TYPE;
 
+  onHueInit = HueDevicePlug.prototype.onHueInit;
+  onHueDeleted = HueDevicePlug.prototype.onHueDeleted;
+
+  onHueEventUpdate = HueDevicePlug.prototype.onHueEventUpdate;
+
+  onRenamed = HueDevicePlug.prototype.onRenamed;
+
+  onCapabilityOnoff = HueDevicePlug.prototype.onCapabilityOnoff;
+
 }
-
-HueDeviceLocalPlug.prototype.onHueInit = HueDevicePlug.prototype.onHueInit;
-HueDeviceLocalPlug.prototype.onHuePoll = HueDevicePlug.prototype.onHuePoll;
-
-HueDeviceLocalPlug.prototype.onRenamed = HueDevicePlug.prototype.onRenamed;
-HueDeviceLocalPlug.prototype.onCapabilityOnoff = HueDevicePlug.prototype.onCapabilityOnoff;
 
 module.exports = HueDeviceLocalPlug;

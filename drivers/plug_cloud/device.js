@@ -7,12 +7,15 @@ class HueDeviceCloudPlug extends HueDeviceCloud {
 
   static HUE_DEVICE_TYPE = HueDevicePlug.HUE_DEVICE_TYPE;
 
+  onHueInit = HueDevicePlug.prototype.onHueInit;
+  onHueDeleted = HueDevicePlug.prototype.onHueDeleted;
+
+  onHueEventUpdate = HueDevicePlug.prototype.onHueEventUpdate;
+
+  onRenamed = HueDevicePlug.prototype.onRenamed;
+
+  onCapabilityOnoff = HueDevicePlug.prototype.onCapabilityOnoff;
+
 }
-
-HueDeviceCloudPlug.prototype.onHueInit = HueDevicePlug.prototype.onHueInit;
-HueDeviceCloudPlug.prototype.onHuePoll = HueDevicePlug.prototype.onHuePoll;
-
-HueDeviceCloudPlug.prototype.onRenamed = HueDevicePlug.prototype.onRenamed;
-HueDeviceCloudPlug.prototype.onCapabilityOnoff = HueDevicePlug.prototype.onCapabilityOnoff;
 
 module.exports = HueDeviceCloudPlug;

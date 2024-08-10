@@ -10,10 +10,14 @@ class HueDeviceCloudBulb extends HueDeviceCloud {
 }
 
 HueDeviceCloudBulb.prototype.onHueInit = HueDeviceBulb.prototype.onHueInit;
-HueDeviceCloudBulb.prototype.onHuePoll = HueDeviceBulb.prototype.onHuePoll;
+HueDeviceCloudBulb.prototype.onHueEventUpdate = HueDeviceBulb.prototype.onHueEventUpdate;
 
 HueDeviceCloudBulb.prototype.onRenamed = HueDeviceBulb.prototype.onRenamed;
 HueDeviceCloudBulb.prototype.onCapabilityAll = HueDeviceBulb.prototype.onCapabilityAll;
+
+HueDeviceCloudBulb.prototype.setLightStateV2 = HueDeviceBulb.prototype.setLightStateV2;
+HueDeviceCloudBulb.prototype.setEffect = HueDeviceBulb.prototype.setEffect;
+HueDeviceCloudBulb.prototype.alertV2 = HueDeviceBulb.prototype.alertV2;
 
 HueDeviceCloudBulb.prototype.setLightState = HueDeviceBulb.prototype.setLightState;
 HueDeviceCloudBulb.prototype.shortAlert = HueDeviceBulb.prototype.shortAlert;

@@ -7,14 +7,15 @@ class HueDeviceLocalMotionSensor extends HueDeviceLocal {
 
   static HUE_DEVICE_TYPE = HueDeviceMotionSensor.HUE_DEVICE_TYPE;
 
+  onHueInit = HueDeviceMotionSensor.prototype.onHueInit;
+  onHueDeleted = HueDeviceMotionSensor.prototype.onHueDeleted;
+
+  onHueEventUpdate = HueDeviceMotionSensor.prototype.onHueEventUpdate;
+
+  onRenamed = HueDeviceMotionSensor.prototype.onRenamed;
+
+  enableMotionSensor = HueDeviceMotionSensor.prototype.enableMotionSensor;
+
 }
-
-HueDeviceLocalMotionSensor.prototype.onHueInit = HueDeviceMotionSensor.prototype.onHueInit;
-HueDeviceLocalMotionSensor.prototype.onHuePoll = HueDeviceMotionSensor.prototype.onHuePoll;
-
-HueDeviceLocalMotionSensor.prototype.onRenamed = HueDeviceMotionSensor.prototype.onRenamed;
-
-HueDeviceLocalMotionSensor.prototype.enableMotionSensor = HueDeviceMotionSensor.prototype.enableMotionSensor;
-HueDeviceLocalMotionSensor.prototype.disableMotionSensor = HueDeviceMotionSensor.prototype.disableMotionSensor;
 
 module.exports = HueDeviceLocalMotionSensor;

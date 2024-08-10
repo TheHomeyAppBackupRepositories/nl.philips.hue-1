@@ -11,5 +11,12 @@
 	},
 	"no_bridges": "Keine Bridges verbunden",
 	"unreachable": "Unerreichbar",
-	"all_lights": "Alle Lichter"
-} 
+	"all_lights": "Alle Lichter",
+	"effect_failed": "Effekt konnte nicht gestartet werden",
+	"effect_soft_off": "Der Effekt ist eingestellt, hat aber möglicherweise keinen Effekt, da die Glühbirne ausgeschaltet ist",
+	"effect_unsupported": "Effekt wird von der Glühbirne nicht unterstützt",
+	"device_offline": "Das Gerät konnte nicht erreicht werden. Ist es eingeschaltet?",
+	"request_failed": "Kommunikation mit der Hue Bridge fehlgeschlagen. Versuchen Sie, Ihre Bridge neu zu starten, und starten Sie dann die Philips Hue-App neu.",
+	"rate_limit_retry": "Rate Limit überschritten. Dieses Gerät wird automatisch versuchen, sich in wenigen Sekunden selbst zu reparieren.",
+	"rate_limit_error": "Rate Limit überschritten. Bitte versuchen Sie es später erneut."
+}

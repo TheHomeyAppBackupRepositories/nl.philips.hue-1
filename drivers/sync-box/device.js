@@ -9,9 +9,13 @@ module.exports = class SyncBoxDevice extends Homey.Device {
 
   async onInit() {
     this.setUnavailable(this.homey.__('loading_syncbox'));
+
+    if (!this.hasCapability('sync')) await this.addCapability('sync').catch(this.error);
+
     this.registerCapabilityListener('onoff', this.onCapabilityOnoff.bind(this));
     this.registerCapabilityListener('dim', this.onCapabilityDim.bind(this));
     this.registerCapabilityListener('hdmi-input', this.onCapabilityHDMIInput.bind(this));
+    this.registerCapabilityListener('sync', this.onCapabilitySync.bind(this));
   }
 
   onPoll() {
@@ -20,10 +24,12 @@ module.exports = class SyncBoxDevice extends Homey.Device {
         hdmiActive,
         hdmiSource,
         brightness,
+        syncActive,
       } = await this.api.getExecution();
 
       this.setCapabilityValue('onoff', !!hdmiActive).catch(this.error);
       this.setCapabilityValue('dim', brightness / 200).catch(this.error);
+      this.setCapabilityValue('sync', !!syncActive).catch(this.error);
 
       const oldHdmiSource = this.getCapabilityValue('hdmi-input');
 
@@ -80,6 +86,12 @@ module.exports = class SyncBoxDevice extends Homey.Device {
     });
   }
 
+  async onCapabilitySync(value) {
+    await this.api.setSyncActive({
+      active: value,
+    });
+  }
+
   async getInputs() {
     const inputs = await this.api.getHDMI();
     return Object.keys(inputs)
@@ -91,6 +103,15 @@ module.exports = class SyncBoxDevice extends Homey.Device {
           name,
         };
       });
+  }
+
+  async onRenamed(name) {
+    if (!this.bridge) return;
+
+    await this.bridge.setDeviceNameV2({
+      name,
+      id: await this.getDeviceIdV2(),
+    });
   }
 
 };

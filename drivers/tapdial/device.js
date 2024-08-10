@@ -8,11 +8,14 @@ class HueDeviceLocalTapDial extends HueDeviceLocal {
   static HUE_DEVICE_TYPE = HueDeviceTapDial.HUE_DEVICE_TYPE;
   static BUTTON_EVENT_MAP = HueDeviceTapDial.BUTTON_EVENT_MAP;
 
+  onHueInit = HueDeviceTapDial.prototype.onHueInit;
+  onHueDeleted = HueDeviceTapDial.prototype.onHueDeleted;
+  convertDevice = HueDeviceTapDial.prototype.convertDevice;
+
+  onHueEventUpdate = HueDeviceTapDial.prototype.onHueEventUpdate;
+
+  onRenamed = HueDeviceTapDial.prototype.onRenamed;
+
 }
-
-HueDeviceLocalTapDial.prototype.onHueInit = HueDeviceTapDial.prototype.onHueInit;
-HueDeviceLocalTapDial.prototype.onHuePoll = HueDeviceTapDial.prototype.onHuePoll;
-
-HueDeviceLocalTapDial.prototype.onRenamed = HueDeviceTapDial.prototype.onRenamed;
 
 module.exports = HueDeviceLocalTapDial;
